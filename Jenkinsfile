@@ -3,9 +3,10 @@ pipeline {
   stages {
     stage('check out') {
       steps {
-        git(url: 'https://github.com/NolanWhiteRoy/maven-samples-A6-nwr.git', branch: 'master')
+        git(url: 'https://github.com/NolanWhiteRoy/maven-samples-A6-nwr', branch: 'master')
       }
     }
+
     stage('Git Bisect') {
       steps {
         script {
